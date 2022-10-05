@@ -10,7 +10,7 @@ Installazione pacchetti:
 Per l'algoritmo di GMapping con la versione ROS Noetic:
 sudo apt-get install ros-noetic-gmapping
 
-Per l'algoritmo AMCL
+Per l'algoritmo AMCL<br>
 sudo apt-get install ros-noetic-map-server
 sudo apt-get install ros-noetic-navigation
 
