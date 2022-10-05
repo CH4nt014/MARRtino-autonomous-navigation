@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='coca_cola'>
+    <link name='main'>
+    <pose frame=''>0 0 0 0 0 0</pose>
+      <visual name='main_Visual'>
+        <geometry>
+          <box>
+          <size>0.4 0.4 0.01</size>
+          </box>
+        </geometry>
+           <material>
+          <script>
+            <uri>model://coca_cola/materials/scripts</uri>
+            <uri>model://cocca_cola/materials/textures</uri>
+            <name>coca_cola</name>
+          </script>
+        </material>
+      </visual>
+     </link>
+    <static>1</static>
+  </model>
+</sdf>

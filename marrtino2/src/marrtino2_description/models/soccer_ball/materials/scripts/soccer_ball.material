@@ -1,0 +1,17 @@
+material soccer_ball
+{
+  technique
+  {
+    pass
+    {
+      lighting off
+      texture_unit
+      {
+        texture soccer_ball.png
+        filtering none none none
+        scale 1.0 1.0
+      }
+    }
+  }
+}
+
