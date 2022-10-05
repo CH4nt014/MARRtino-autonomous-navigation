@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)file:///C:/Users/Antonio/Desktop/template-progetto-VeP/Titolo%20del%20progetto.html -->
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Titolo del progetto</title>
+	<!-- Meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrizione del progetto">
+    <meta name="author" content="Domenico Bloisi adapted a 3rd Wave Media template">    
+    <link rel="shortcut icon" href="http://web.unibas.it/bloisi/tutorial/favicon.ico">  
+    <link href="./Progetto_files/css.txt" rel="stylesheet" type="text/css">
+    <link href="./Progetto_files/css1.txt" rel="stylesheet" type="text/css"> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="./Progetto_files/bootstrap.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="./Progetto_files/font-awesome.css">
+        
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="./Progetto_files/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="Progetto_files/marrtinob.png" hegiht="720" width="480">
+            <div class="profile-content pull-left">
+                <h1 class="name">MARRtino Navigazione Autonoma</h1>
+            </div>
+
+            <div class="profile-content pull-right">
+				<img class="profile-image img-responsive pull-left" src="./Progetto_files/logo.png" alt="unibas logo" height="97" width="312/">
+				
+				<p>&nbsp;</p>
+				<h3 class="desc">
+				<a href="http://web.unibas.it/bloisi/corsi/visione-e-percezione.html" target="_blank">
+				Corso di Visione e Percezione</a>
+				</h3>
+			</div>
+			
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+			
+			    <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">Problema</h2>
+                        <div class="content">
+                            <p>Con il presente progetto, viene 
+presentato uno dei task tipici della Robotica e dell'Intelligenza 
+Artificiale: la navigazione autonoma. Per la realizzazione del progetto 
+abbiamo impiegato MARRtino, una piattaforma robotica a trasmissione 
+differenziale disponibile in diverse forme, basata sul software ROS. 
+
+
+							
+							</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+				
+				<section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">Motivazioni</h2>
+                        <div class="content">
+                            
+							
+							
+                        </div><!--//content-->
+                    <p></p>
+Negli ultimi anni i robot mobili hanno attirato sempre molta più 
+attenzione in quanto impiegati in disparati campi: dall'industria (con 
+l'impiego di carelli automoatici nei magazzini), all'area dometisca (es.
+ aspirapolvere Roomba), fino all'agricoltura. Un altro esempio di robot 
+mobili sono le macchine con guida autonoma che sono in grado di 
+circolare in strada da sole senza l'intervento del conducente.
+I tre elementi chiave per consentire ad un robot di navigare 
+autonomamente sono: l'acquisizione della mappa dell'ambiente in cui deve
+ muoversi, la posizione assunta dal robot ed infine una rotta per 
+raggiungere la destinazione evitando gli ostacoli che incontra lungo il 
+percorso. </div><!--//section-inner-->                 
+                </section><!--//section-->
+			
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading"><a id="goals"></a>Obiettivi</h2>
+                        <div class="content">
+                            <p>Obiettivi principali:</p>
+							
+							<ol>
+								<li> Creazione di ambienti complessi</li>
+								<li>Costruzione delle mappe degli ambienti</li>
+								<li>Navigazione Autonoma</li>
+							</ol>
+							<p></p>
+                                                     
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+				
+				<section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading"><a id="dataset"></a>Terminologia e Strumenti Software</h2>
+                        <div class="content">
+                            <p>Di seguito sono riportati e brevemente introdotti gli strumenti a cui si è fatto riscorso per la realizzazione del progett:</p>
+                            
+<ul>
+							    <li>Robot Operating System (ROS): meta sistema operativo di 
+tipo open-source che fornisce servizi come l'astrazione dell'hardware, 
+il controllo di dispisitivi a basso livello, funzionalità necessarie per
+ la comunicazione tra processi e per la gestione dei programmi.</li>
+<li>Gazebo: simulatore di robotica open-source che si interfaccia bene con ROS </li>
+<li>MARRtino: piattaforma robotica a trasmissione differenziale basata sul software ROS, disponibile in diverse forme.</li>
+<li>URDF (Universal Robot Description Format): formato usato per 
+descrivere le proprietà fisice, visive, di trasmissione e collisione di 
+un robot. Tipicamente usa la notazione XML o XACRO.</li>
+<li>RViz: tool messo a dispoizione da ROS per visualizzare i robot e il loro moto.</li>
+
+
+
+								
+																
+                            </ul>
+							<p></p>			
+                                                     
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+				
+				<section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading"><a id="dataset"></a>Implementazione e Codice</h2>
+                        <div class="content">
+                            <p>Come abbiamo precedentemente anticipato 
+il robot mobile MARRtino è basato sul software ROS il quale è strutturalmente 
+costituito da packages che sono le più piccole unità che è possibile compilare 
+singolarmente. I packages sono dunque moduli al cui interno sono presenti i 
+nodi ROS, le librerie, i file di configurazione, il codice prodotto da terzi, 
+etc.</p><div></div><p></p>
+							<p><b>Creazione del Modello MARRtino:</b>
+<br>
+La prima fase del progetto prevede la definizione del modello 
+del robot. Il robot modellato si ispira completamente al progetto 
+MARRtino dell'Università La Sapienza di Roma. 
+<br>
+</p><div class="row">
+  <div class="column">
+    <img src="Progetto_files/marrtino.png" style="width:50%">
+  </div>
+</div>
+MARRtino è un robot a trasmissione differenziale su ruote ossia una base
+ mobile avente due ruote motorizzate indipendenti.
+ <div class="row">
+  <div class="column">
+    <img src="Progetto_files/elettronica.png" style="width:50%">
+  </div>
+</div> 
+Le ruote sono posizionate ai due lati opposti della scocca e non sono sterzanti ciò 
+significa che si ha un moto in avanti quando entrambe le ruote girano in
+ avanti, mentre gira sul posto quando una ruota gira in un senso e 
+l'altra gira in senso opposto. MARRtino è provvisto anche di un castor 
+libero di muoversi in ogni direzione.
+<div class="row">
+  <div class="column">
+    <img src="Progetto_files/robot-rotto.png" style="width:50%">
+  </div>
+</div>
+La condizione di stabilità viene garantita sia dalla presenza di tre 
+ruote e sia perchè il centro di gravità si trova all’interno del
+triangolo formato dai punti di contatto delle ruote con
+il terreno.
+<p></p>
+	
+
+
+
+
+
+<p>La parte di modellazione del robot viene effettuata all'interno del 
+package 'marrtino_description' al cui interno sono definite le cartelle:
+ meshes, launch e urdf.
+  
+</p>
+<li>La cartella <b>urdf</b> è costituita dal file 'marrtino.xacro' in 
+cui è 
+contenuta la struttra del modello e file aggiuntivi come 
+'material.xacro' in cui venogno personalizzate caratterisiche come il 
+colore.
+La struttra del modello è costituita da un link chassis, il quale 
+contiene sia la scocca che il caster, le ruote che sono rappresentate da
+ un link: 'left_wheel' per la sinistra e 'right_wheel' per la destra. 
+Sono presenti inoltre sensori che nel caso specifico sono una camera per
+ riprendere la scena e acquisire immagini ed un sensore laser Hokuyo il 
+quale rileva la distanza che intercorre tra il robot ed eventuali 
+ostacoli presenti nell'ambiente circostante oltre agli elementi di cui è
+ costituito l'ambiente stesso. All'interno del file sono presenti 
+elementi link, collision, visual, inertial, sensor, plug-in ed infine i 
+joint i quali vengono utilizzati rispettivamente per: contenere le 
+proprietà fisiche del modello, incapsulare la geometria usata per il 
+controllo delle collisioni, per visualizzare parti di un link, per 
+descrivere le proprietà dinamiche di un link, per controllare il 
+modello, mentre il plug-in utilizzato nel caso specifico è il 
+'differential_drive controller' che consente il movimento del robot  ed 
+infine i joint vengono utilizzati per connettere due link.<br>
+Il modello di MARRtino è stato creato sulla base delle reali dimensioni 
+del robot in modo tale da ottenere una corrispondenza quanto più precisa
+ tra il comportamento simulato e quello fisico in un ambiente reale.</li>
+<li>Nella cartella <b>launch</b> sono presenti i launch file ossia file XML che
+ contengono la lista dei nodi da lanciare con i rispettivi parametri.</li>
+<li> Ed infine nella cartella <b>meshes</b> sono invece memorizzate le meshes 
+contenente i modelli .dae (elemento 3D che raffiugura l'oggetto 
+visualizzabile in Gazebo) sia della camera che del laser. In particolare
+ il modello .dae della camera fa rifermiento al file 'r200.dae' e quello
+ relativo al laser al file 'hokuyo.dae'. Utile al fine di ottenere una 
+maggiore corrispndenza tra la simulazione e la realtà.</li>
+
+	
+	
+<p>
+  <br>Dopo aver creato e compilato il package 'marrtino_description' 
+lanciamo il launch file grazie al quale verrà aperto Rviz. Inizialmente 
+non sarà mostrato nulla, motivo per cui si va a cambiare il valore 
+relativo alla sezione 'Global Options'-&gt;'Fixed Frame' da map a 
+chassis.
+  <br>Dopo di che selezionando il pulsante 'Add' in basso a sinistra 
+sarà possibile scegliere nella sezione 'By display type' di aggiungere 
+il 'RobotModel'.
+  <br>A seguito delle seguenti operazioni sarà possibile vedere il modello di marrtino appena creato all'interno di Rviz.</p>
+
+							<p><b>Creazione di Ambienti Complessi:</b><br>
+  La seconda fase del prgoetto è stata dedicata alla creazione di ambienti complessi.
+<br>
+Sono stati creati tre mondi con un livello crescente di difficoltà: il 
+primo mondo 'stanza' simula un ambiente chiuso con una geometria 
+basilare al cui interno non sono presenti ostacoli se non dei lievi 
+restringimenti degli spazi in prossimità degli elementi 'Door'.
+
+<div class="row">
+  <div class="column">
+    <img src="Progetto_files/stanza.png" style="width:50%">
+  </div>
+</div> 
+  <br>
+Il secondo ambiente 'maze' è sostanzialmente 
+un labirinto rettangolare chiuso costituito solo da elementi 'Wall' di 
+Gazebo che non presenta ostacoli all'interno di esso se non le pareti 
+costituenti.
+<br>
+<div class="row">
+  <div class="column">
+    <img src="Progetto_files/Maze.png" style="width:50%">
+  </div>
+</div> 
+Il terzo mondo ambiente creato 'maze2' che simula
+ anch'esso un labirinto chiuso, di forma quadrata, i cui ostacoli sono 
+gli elementi 'Wall' disposti al suo interno.
+
+<div class="row">
+  <div class="column">
+    <img src="Progetto_files/Maze2_world.png" style="width:50%">
+  </div>
+</div> 
+<br>
+
+
+Per quanto riguarda la creazione degli ambienti è stato utilizzato, come
+ abbiamo largamente anticipato in precedenza, il simulatore Gazebo. 
+<br>
+Sono stati utilizzati sia i modelli 3D messi a disposizione dal 
+software, come gli elementi 'Wall', che il modello importato di MARRtino
+ definito in precedenza. L'import di modelli esterni a Gazebo è stato 
+eseguito attraverso il menu 'Insert'. 
+<br>
+Per ogni ambiente creato è presente un launch file nella directory 
+'launch' del package 'marrtino_gazebo'. All'interno di questo infatti 
+vengono implementate tutte le fasi sopra discusse. Oltre alla cartella 
+launch, sono presenti anche le directories: models (contenente i file 
+.config e .sdf dei mondi creati) e world (all'interno della quale sono 
+salvati i file 'maze.world','stanza.world' e 'maze2.world') </p>
+							
+							<p><b>Creazione della Mappa:</b>
+<br>Uno dei tre elementi chiave alla base della navigazione autonoma è 
+l'acquisizione della mappa dell'ambiente in cui il robot deve muoversi. 
+Per la creazione di quest'ultima ci serviremo dell'algoritmo GMapping di 
+ROS, ossia un algoritmo SLAM (Simultaneous localization and mapping) che
+ prende in input i dati ricevuti dal sensore laser.
+<br>
+A questo punto sarà necessario utilizzare i package ROS per lo SLAM così
+ da creare la mappa dei mondi simulati tramite Gazebo e lo stack ROS per
+ la navigazione per far muovere il TurtleBot3 verso una destinazione 
+della mappa.
+<br>
+Eseguiamo quindi il comando 'sudo apt-get insatll ros-noetic-gmapping' per l'installazione di GMapping in ROS Noetic. 
+<br>
+  Per poter utilizzare il TurtleBot3 è necessario installare all'interno del catkin_ws i pacchetti:
+  <br>
+  
+  
+    </p><li>
+      git clone https //github.com/robotis-git/turtlebot3_msgs.git
+      </li><li>
+      git clone https //github.com/robotis-git/turtlebot3_simulation.git
+      </li><li>
+      git clone https //github.com/robotis-git/turtlebot3.git
+      </li><p>
+  <br>
+  In un primo terminale digitiamo il comando: <b>'roslaunch marrtino marrtino_world.launch'</b> a seguito del quale si avvia Gazebo in cui verrà caricato sia l'ambiente che il robot il quale avrà una posizione fissa.
+<br>
+  In un secondo terminale eseguiamo il nodo dell'algritmo gmapping con il comando <b>'roslaunch marrtino gmapping.launch'</b>
+ in questo modo viene eseguito il nodo che prende in input i dati 
+ricevuti dal sensore Hokuyo mendiante il topic /marrtino/laser/scan. 
+  <br>
+  Per poter visualizzare i dati, che il sensore del robot sta inviando,  apriamo Rviz mediante il comando <b>'roslaunch marrtino marrtino_rviz_gmapping.launch'</b> in un nuovo terminale.
+  <br>
+  A questo punto è necessario che il robot possa muoversi all'interno 
+dell'ambiente per poter apprendere quest'ultimo e aggiornarne 
+simultaneamente la mappa.
+  <br>
+ Attualmente il robot assume una posizione fissa, per consentirne il movimento, in un quarto teminale, eseguiamo il comando <b>'roslaunch marrtino marrtino_teleop.launch'</b>,
+ a seguito del quale è possibile iniziare la guida tele operata di 
+turtlebot3. A questo punto è possibile controllre il moto del robot 
+  attraverso la tastiera con i tasti: <b>a/d</b> (incremento/decremento della velocità angolare), <b>w/x</b> (incremento/decremento della velocità lineare), <b>s</b> (blocca il moto).<br> 
+  Terminata l'esplorazione, il salvataggio della mappa generata con il <b>map_server</b> avviene tramite il comando <b>'rosrun map_saver -f ~/nome_della_mappa/path'</b>.
+  <br>
+  A seguito di questa operazione nel package <b>'marrtino_navigation'</b>
+ all'interno della directory 'maps' verranno salvati due file per 
+ambiente: un file map.pgm ed un file map.yaml. Nel caso in esame avremo 
+quindi sei file:stanza.pgm e stanza.yaml, per il primo ambiente, 
+maze.pgm e maze.yaml e maze2.pgm e maze2.yaml per il secondo ed il 
+terzo.
+</p>
+<style>
+* {
+  box-sizing: border-box;
+}
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="Progetto_files/map_Maze.png"  style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="Progetto_files/map_Maze2.png"  style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="Progetto_files/map-Stanza.png"  style="width:100%">
+  </div>
+</div>
+    
+    
+<p><b>Navigazione Autonoma</b>
+L'obiettivo finale del progetto è la navigazione autonoma del robot. 
+<br>
+Per consentire la navigazione autonoma di un robot abbiamo bisogno di 
+una mappa, di un modulo di localizzazione e un modulo per la gestione 
+del raggiungimento della destinazione.
+Per poter navigare il robot utilizza un ROS Navigation Stack il quale 
+richiede in inupt informazioni inviate dall'odontometria e dai sensori 
+ed invia al robot comandi circa la velocità per navigare.
+<br>
+<img class="profile-image img-responsive pull-left" src="Progetto_files/navigation_stack.png" alt="unibas logo" width="840" height="680">
+<br>
+Il navigation stack necessita inoltre che il robot sia configurato, per 
+far ciò è necessario che si abbiano le informazioni riguardanti la mappa
+ che verrà quindi caricata (una per ogni ambiente) attraverso il file 
+amcl_nome_mondo.launch specificando al suo interno il file 
+nome_mondo.yaml che contiene un riferimento al file nome_mondo.pgm
+
+Per quanto rigurarda il modulo di localizzazione abbiamo impiegato a 
+tale scopo un sistema di localizzazione che in questo caso sfrutta 
+l'algoritmo AMCL.
+ROS implementa l'algoritmo AMCL (Adaptive Monte Carlo Localization) il 
+quale usa un filtro a particelle per tener traccia della poszione del 
+robot.
+<br>
+Ogni posa è rappresentata da una particella che sono: mosse secondo il 
+movimento (relativo) misurato dall'odometria e soppresse/replicate in 
+base al modo in cui la scansione laser si adatta alla mappa, data la 
+posizione della particella.
+
+Per l'implementazione dell'ultimo obiettivo creeremo dunque un albero 
+/tf per rilevare informazioni riguardo le relazioni di coordinate tra i 
+frames.
+In primo terminale apriamo Gazebo in cui verrà carricato il mondo 
+corrispondente con il modello di MARRtino, che assumerà una posizione 
+fissa, con il comando 'roslaunch marrtino nome_mondo.launch', in un 
+secondo temrinale eseguiamo il comando 'roslaunch marrtino 
+amcl_nome_mondo.launch' il quale esegue l'algoritmo di navigazione 
+autonoma a seguito del quale verranno caricati i file di configurazione 
+necessati per la creazione della costmap, della localizzazione AMCL e 
+della navigazione, ed infine con il comando 'roslaunch marrtino 
+marrtino_rviz_amcl.launch' viene eseguito Rviz. All'interno di Rviz 
+viene caricato il modello del robot e la mappa precedenetemente creata, 
+selezionando il tasto 2D Nav Goal definiamo la destinazione che 
+desideriamo far raggiungere al robot. 
+</p>
+                                                     
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+				
+				
+				<!--//section-->
+				
+				<section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading"><a id="training"></a>Test e Risultati</h2>
+                        <div class="content">
+                            							
+								
+							<h3>Test di navigazione</h3>
+							<p>Al fine di verificare l'efficenza dell'algoritmo di 
+navigazione sono stati eseguiti diversi test per i diversi mondi. 
+<br>
+ Di seguito sono riportare le dimostrazioni del funzionamento 
+dell'algoritmo, in cui vine mostrata l'applicazione sia nell'ambiente di
+ simulazione Gazebo che in Rviz.</p>
+    <li>
+      Mondo 1: Stanza
+      <br>
+      Per il primo mondo ci siamo limitati a verificare il corretto funzionamento dell'algoritmo e, quindi, alla corretta navigazione del robot dal punto A (il punto in cui si trova il robot a inizio simulazione) al punto B (il punto più distante della mappa), in quanto il mondo stesso è molto semplice.
+      <video width="840" height="480" controls="">
+        <source src="Progetto_files/Stanza_amcl.mp4" type="video/mp4">
+        </video>
+    </li>
+
+    <li>
+      Mondo 2: Maze2
+      <br>
+      Per il secondo mondo sono stati effettuati due test di navigazione per verificare che il robot riesca a raggiungere il punto di interesse in qualunque posizione e con qualunque ostacolo si trovi di fronte. 
+      <br>
+      Il primo test prevede il raggiungimento di un punto molto lontano dal punto di inizio del robot con la prensenza diversi muri che si frappongono fra il robot e il suo obiettivo.
+      <video width="840" height="480" controls="">
+        <source src="Progetto_files/Maze2_amcl.mp4" type="video/mp4">
+        </video>
+      Il secondo test prevede il raggiungimento di un punto B distante dal punto di partenza A. Anche qui ci sono diversi muri nel mezzo, in più è presente, nell'ultimo tratto, un restringimento dei muri.
+        <video width="840" height="480" controls="">
+            <source src="Progetto_files/Maze2_amcl2.mp4" type="video/mp4">
+            </video>
+    </li>
+    </li><li>
+      Mondo 3: Maze
+      <br>
+      Per il terzo mondo è sono stati effettuati due test. In questo caso è stato utilizzato un labirinto più grande rispetto al primo.
+      <br>
+      Per il primo test è stato scelto un punto centrale della mappa, difficle per il cambio di direzioni che il robot deve prendere.
+      <video width="840" height="480" controls="">
+        <source src="Progetto_files/Maze_amcl.mp4" type="video/mp4">
+        </video>
+      Per il secondo test è stato scelto il punto opposto della mappa (in quanto speculare), per verificare il corretto movimento del robot in ambienti più grandi.
+      <video width="840" height="480" controls="">
+        <source src="Progetto_files/Maze_amcl2_error.mp4" type="video/mp4">
+        </video>
+    </li>
+
+      </li><p>
+      
+	<h3>Risultati quantitativi</h3>
+	<p>La navigazione autonoma del robot MARRtino funziona perfettamente nella quasi totalità dei casi studiati. Infatti possiamo notare come per tutti e tre i mondi il robot MARRtino sia riuscito a raggiungere il punto segnato senza problemi. Diversi sono i problemi che affliggono la simulazione per quanto riguarda il mapping dell'ambiente. Nella seconda simulazione di Maze, come è possibile vedere dal video, il robot non riesce a raggiungere il punto segnato in quanto la mappa passata risulta differente da quella creata in gazebo, ovvero risulta errata, distorta quasi totalmente. Il mapping di Maze è risultato più volte fallimentare in quanto gli spazi troppo ampi rendono le rilevazioni del sensore montato sul robot MARRtino molto difficoltose a causa di continue ricalibrazioni del sensore con conseguente rimappatura delle aree visibili da esso. Quest'ultima mappa è risultata essere la migliore mappatura tra quelle effettuate.
+    E' possibile notare come il robot tenti di superare il muro che è stato appena rilevato in una posizione differente da quella registrata nella mappa, però dopo un numero elevato di tentativi, e dopo essere riuscito in parte a oltrepassare il muro, il robot si blocca contro quest'ultimo e non da più segni di movimento. </p>
+    <img src="Progetto_files/robot_errore.png"  style="width:50%">
+							
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+            </div><!--//primary-->
+            
+			<div class="secondary col-md-4 col-sm-12 col-xs-12">
+                <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Autori</h2>
+                        <div class="content">
+                            <p>Antonio Rinaldi 
+<br>
+  Aurelia Santarsiere
+</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->                        
+								
+                             
+                <aside class="blog aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Riferimenti</h2>
+						<div class="content">
+						    
+							
+							
+							<div class="item">
+								<a href="http://web.unibas.it/bloisi/corsi/visione-e-percezione.html" target="_blank">VeP pagina del corso</a>
+							</div>
+							<div class="item">
+								<a href="http://web.unibas.it/bloisi/" target="_blank">Domenico Bloisi's home page</a>
+							</div>
+							<div class="item">
+								<a target="_blank" href="https://kiranpalla.com/autonomous-navigation-ros-differential-drive-robot-simulation/">Autonomous Navigation of ROS Robot</a>
+								
+							</div>
+
+							<div class="item">
+								<a target="_blank" href="http://wiki.ros.org/it">ROS Wiki</a>
+                            </div>
+							
+                        <div class="item">
+								<a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/" target="_blank">Gazebo Siumulation</a>
+							</div><div class="item">
+								<a target="_blank" href="https://www.marrtino.org/">MARRTINO Robot</a>
+							</div></div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->                            
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">This template adapted from <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+ 
+
+ 
+
+</body></html>
