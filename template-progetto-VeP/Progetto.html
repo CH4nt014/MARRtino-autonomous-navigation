@@ -428,10 +428,27 @@ desideriamo far raggiungere al robot.
                     <div class="section-inner">
                         <h2 class="heading"><a id="training"></a>Test e Risultati</h2>
                         <div class="content">
-                            							
+              <h3>Scanning dell'ambiente</h3>
+              <p>Di seguito sono riportati i video che mostrano lo scanning della mappa del robot MARRtino, comandato da tastiera, con il sensore montatogli sopra attraverso l'utilizzo del nodo "My-laser-scan" per i tre mondi.
+                <li>
+                  Mondo 1: Stanza<br>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/RbS84k1p4rA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <li>
+                  Mondo 2: Maze2<br>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/lnOlhIPfYoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <li>
+                  Mondo 3: Maze<br>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/UTtE9BEqOAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+</p>			
 								
 							<h3>Test di navigazione</h3>
-							<p>Al fine di verificare l'efficenza dell'algoritmo di 
+							<p> Di seguito sono riportare le dimostrazioni del funzionamento 
+dell'algoritmo, in cui vine mostrata l'applicazione sia nell'ambiente di
+ simulazione Gazebo che in Rviz.<br><br>
+                Al fine di verificare l'efficenza dell'algoritmo di 
 navigazione sono stati eseguiti diversi test per i diversi mondi. 
 <br>
  Di seguito sono riportare le dimostrazioni del funzionamento 
@@ -440,10 +457,8 @@ dell'algoritmo, in cui vine mostrata l'applicazione sia nell'ambiente di
     <li>
       Mondo 1: Stanza
       <br>
-      Per il primo mondo ci siamo limitati a verificare il corretto funzionamento dell'algoritmo e, quindi, alla corretta navigazione del robot dal punto A (il punto in cui si trova il robot a inizio simulazione) al punto B (il punto più distante della mappa), in quanto il mondo stesso è molto semplice.
-      <video width="840" height="480" controls="">
-        <source src="Progetto_files/Stanza_amcl.mp4" type="video/mp4">
-        </video>
+      Per il primo mondo ci siamo limitati a verificare il corretto funzionamento dell'algoritmo e, quindi, alla corretta navigazione del robot dal punto A (il punto in cui si trova il robot a inizio simulazione) al punto B (il punto più distante della mappa), in quanto il mondo stesso è molto semplice.<br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cSF6NK96I2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </li>
 
     <li>
@@ -451,28 +466,20 @@ dell'algoritmo, in cui vine mostrata l'applicazione sia nell'ambiente di
       <br>
       Per il secondo mondo sono stati effettuati due test di navigazione per verificare che il robot riesca a raggiungere il punto di interesse in qualunque posizione e con qualunque ostacolo si trovi di fronte. 
       <br>
-      Il primo test prevede il raggiungimento di un punto molto lontano dal punto di inizio del robot con la prensenza diversi muri che si frappongono fra il robot e il suo obiettivo.
-      <video width="840" height="480" controls="">
-        <source src="Progetto_files/Maze2_amcl.mp4" type="video/mp4">
-        </video>
+      Il primo test prevede il raggiungimento di un punto molto lontano dal punto di inizio del robot con la prensenza diversi muri che si frappongono fra il robot e il suo obiettivo.<br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xTsSuIstPFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
       Il secondo test prevede il raggiungimento di un punto B distante dal punto di partenza A. Anche qui ci sono diversi muri nel mezzo, in più è presente, nell'ultimo tratto, un restringimento dei muri.
-        <video width="840" height="480" controls="">
-            <source src="Progetto_files/Maze2_amcl2.mp4" type="video/mp4">
-            </video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qg46l2kPUAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </li>
     </li><li>
       Mondo 3: Maze
       <br>
       Per il terzo mondo è sono stati effettuati due test. In questo caso è stato utilizzato un labirinto più grande rispetto al primo.
       <br>
-      Per il primo test è stato scelto un punto centrale della mappa, difficle per il cambio di direzioni che il robot deve prendere.
-      <video width="840" height="480" controls="">
-        <source src="Progetto_files/Maze_amcl.mp4" type="video/mp4">
-        </video>
-      Per il secondo test è stato scelto il punto opposto della mappa (in quanto speculare), per verificare il corretto movimento del robot in ambienti più grandi.
-      <video width="840" height="480" controls="">
-        <source src="Progetto_files/Maze_amcl2_error.mp4" type="video/mp4">
-        </video>
+      Per il primo test è stato scelto un punto centrale della mappa, difficle per il cambio di direzioni che il robot deve prendere. <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/axD1Y_c3GN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+      Per il secondo test è stato scelto il punto opposto della mappa (in quanto speculare), per verificare il corretto movimento del robot in ambienti più grandi.<br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0aMEGTirWVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </li>
 
       </li><p>
