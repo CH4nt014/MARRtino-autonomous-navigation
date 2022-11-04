@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0083)file:///C:/Users/Antonio/Desktop/template-progetto-VeP/Titolo%20del%20progetto.html -->
+<!-- saved from url=(0075)file:///C:/Users/santa/OneDrive/Desktop/template-progetto-VeP/Progetto.html -->
 <html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Titolo del progetto</title>
 	<!-- Meta -->
@@ -29,7 +29,7 @@
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="Progetto_files/marrtinob.png" hegiht="720" width="480">
+            <img class="profile-image img-responsive pull-left" src="./Progetto_files/marrtinob.png" hegiht="720" width="480">
             <div class="profile-content pull-left">
                 <h1 class="name">MARRtino Navigazione Autonoma</h1>
             </div>
@@ -138,7 +138,7 @@ un robot. Tipicamente usa la notazione XML o XACRO.</li>
 				
 				<section class="about section">
                     <div class="section-inner">
-                        <h2 class="heading"><a id="dataset"></a>Implementazione e Codice</h2>
+                        <h2 class="heading"><a id="dataset"></a>Implementazione</h2>
                         <div class="content">
                             <p>Come abbiamo precedentemente anticipato 
 il robot mobile MARRtino è basato sul software ROS il quale è strutturalmente 
@@ -152,45 +152,32 @@ La prima fase del progetto prevede la definizione del modello
 del robot. Il robot modellato si ispira completamente al progetto 
 MARRtino dell'Università La Sapienza di Roma. 
 <br>
-</p><div class="row">
-  <div class="column">
-    <img src="Progetto_files/marrtino.png" style="width:50%">
-  </div>
-</div>
+</p>
+    <img src="./Progetto_files/marrtino.png" style="width:50%">
+<br>
 MARRtino è un robot a trasmissione differenziale su ruote ossia una base
  mobile avente due ruote motorizzate indipendenti.
- <div class="row">
-  <div class="column">
-    <img src="Progetto_files/elettronica.png" style="width:50%">
-  </div>
-</div> 
+    <img src="./Progetto_files/elettronica.png" style="width:50%">
+<br>
 Le ruote sono posizionate ai due lati opposti della scocca e non sono sterzanti ciò 
 significa che si ha un moto in avanti quando entrambe le ruote girano in
  avanti, mentre gira sul posto quando una ruota gira in un senso e 
 l'altra gira in senso opposto. MARRtino è provvisto anche di un castor 
-libero di muoversi in ogni direzione.
-<div class="row">
-  <div class="column">
-    <img src="Progetto_files/robot-rotto.png" style="width:50%">
-  </div>
-</div>
+libero di muoversi in ogni direzione.<br>
+    <img src="./Progetto_files/robot-rotto.png" style="width:50%">
+<br>
 La condizione di stabilità viene garantita sia dalla presenza di tre 
 ruote e sia perchè il centro di gravità si trova all’interno del
 triangolo formato dai punti di contatto delle ruote con
 il terreno.
 <p></p>
-	
-
-
-
-
 
 <p>La parte di modellazione del robot viene effettuata all'interno del 
 package 'marrtino_description' al cui interno sono definite le cartelle:
  meshes, launch e urdf.
   
 </p>
-<li>La cartella <b>urdf</b> è costituita dal file 'marrtino.xacro' in 
+<ul><li>La cartella <b>urdf</b> è costituita dal file 'marrtino.xacro' in 
 cui è 
 contenuta la struttra del modello e file aggiuntivi come 
 'material.xacro' in cui venogno personalizzate caratterisiche come il 
@@ -210,20 +197,18 @@ controllo delle collisioni, per visualizzare parti di un link, per
 descrivere le proprietà dinamiche di un link, per controllare il 
 modello, mentre il plug-in utilizzato nel caso specifico è il 
 'differential_drive controller' che consente il movimento del robot  ed 
-infine i joint vengono utilizzati per connettere due link.<br>
+infine i joint vengono utilizzati per connettere due link.<br></ul>
 Il modello di MARRtino è stato creato sulla base delle reali dimensioni 
 del robot in modo tale da ottenere una corrispondenza quanto più precisa
  tra il comportamento simulato e quello fisico in un ambiente reale.</li>
-<li>Nella cartella <b>launch</b> sono presenti i launch file ossia file XML che
- contengono la lista dei nodi da lanciare con i rispettivi parametri.</li>
-<li> Ed infine nella cartella <b>meshes</b> sono invece memorizzate le meshes 
+<ul><li>Nella cartella <b>launch</b> sono presenti i launch file ossia file XML che
+ contengono la lista dei nodi da lanciare con i rispettivi parametri.</li></ul>
+<ul><li> Ed infine nella cartella <b>meshes</b> sono invece memorizzate le meshes 
 contenente i modelli .dae (elemento 3D che raffiugura l'oggetto 
 visualizzabile in Gazebo) sia della camera che del laser. In particolare
  il modello .dae della camera fa rifermiento al file 'r200.dae' e quello
  relativo al laser al file 'hokuyo.dae'. Utile al fine di ottenere una 
-maggiore corrispndenza tra la simulazione e la realtà.</li>
-
-	
+maggiore corrispndenza tra la simulazione e la realtà.</li></ul>
 	
 <p>
   <br>Dopo aver creato e compilato il package 'marrtino_description' 
@@ -243,32 +228,21 @@ Sono stati creati tre mondi con un livello crescente di difficoltà: il
 primo mondo 'stanza' simula un ambiente chiuso con una geometria 
 basilare al cui interno non sono presenti ostacoli se non dei lievi 
 restringimenti degli spazi in prossimità degli elementi 'Door'.
-
-<div class="row">
-  <div class="column">
-    <img src="Progetto_files/stanza.png" style="width:50%">
-  </div>
-</div> 
-  <br>
+</p>
+    <img src="./Progetto_files/stanza.png" style="width:50%">
+<br>
 Il secondo ambiente 'maze' è sostanzialmente 
 un labirinto rettangolare chiuso costituito solo da elementi 'Wall' di 
 Gazebo che non presenta ostacoli all'interno di esso se non le pareti 
 costituenti.
 <br>
-<div class="row">
-  <div class="column">
-    <img src="Progetto_files/Maze.png" style="width:50%">
-  </div>
-</div> 
+    <img src="./Progetto_files/Maze.png" style="width:50%">
+    <br>
 Il terzo mondo ambiente creato 'maze2' che simula
  anch'esso un labirinto chiuso, di forma quadrata, i cui ostacoli sono 
 gli elementi 'Wall' disposti al suo interno.
-
-<div class="row">
-  <div class="column">
-    <img src="Progetto_files/Maze2_world.png" style="width:50%">
-  </div>
-</div> 
+<br>
+    <img src="./Progetto_files/Maze2_world.png" style="width:50%">
 <br>
 
 
@@ -285,7 +259,7 @@ Per ogni ambiente creato è presente un launch file nella directory
 vengono implementate tutte le fasi sopra discusse. Oltre alla cartella 
 launch, sono presenti anche le directories: models (contenente i file 
 .config e .sdf dei mondi creati) e world (all'interno della quale sono 
-salvati i file 'maze.world','stanza.world' e 'maze2.world') </p>
+salvati i file 'maze.world','stanza.world' e 'maze2.world') <p></p>
 							
 							<p><b>Creazione della Mappa:</b>
 <br>Uno dei tre elementi chiave alla base della navigazione autonoma è 
@@ -296,26 +270,26 @@ ROS, ossia un algoritmo SLAM (Simultaneous localization and mapping) che
 <br>
 A questo punto sarà necessario utilizzare i package ROS per lo SLAM così
  da creare la mappa dei mondi simulati tramite Gazebo e lo stack ROS per
- la navigazione per far muovere il TurtleBot3 verso una destinazione 
+ la navigazione per far muovere il robot MARRtino verso una destinazione 
 della mappa.
 <br>
 Eseguiamo quindi il comando 'sudo apt-get insatll ros-noetic-gmapping' per l'installazione di GMapping in ROS Noetic. 
 <br>
-  Per poter utilizzare il TurtleBot3 è necessario installare all'interno del catkin_ws i pacchetti:
+  Per poter utilizzare il robot MARRtino è necessario installare all'interno del catkin_ws i pacchetti:
   <br>
   
   
-    </p><li>
+    </p><ul><li>
       git clone https //github.com/robotis-git/turtlebot3_msgs.git
       </li><li>
       git clone https //github.com/robotis-git/turtlebot3_simulation.git
       </li><li>
       git clone https //github.com/robotis-git/turtlebot3.git
-      </li><p>
+      </li></ul><p>
   <br>
   In un primo terminale digitiamo il comando: <b>'roslaunch marrtino marrtino_world.launch'</b> a seguito del quale si avvia Gazebo in cui verrà caricato sia l'ambiente che il robot il quale avrà una posizione fissa.
 <br>
-  In un secondo terminale eseguiamo il nodo dell'algritmo gmapping con il comando <b>'roslaunch marrtino gmapping.launch'</b>
+  In un secondo terminale eseguiamo il nodo dell'algoritmo gmapping con il comando <b>'roslaunch marrtino gmapping.launch'</b>
  in questo modo viene eseguito il nodo che prende in input i dati 
 ricevuti dal sensore Hokuyo mendiante il topic /marrtino/laser/scan. 
   <br>
@@ -327,7 +301,7 @@ simultaneamente la mappa.
   <br>
  Attualmente il robot assume una posizione fissa, per consentirne il movimento, in un quarto teminale, eseguiamo il comando <b>'roslaunch marrtino marrtino_teleop.launch'</b>,
  a seguito del quale è possibile iniziare la guida tele operata di 
-turtlebot3. A questo punto è possibile controllre il moto del robot 
+MARRtino. A questo punto è possibile controllre il moto del robot 
   attraverso la tastiera con i tasti: <b>a/d</b> (incremento/decremento della velocità angolare), <b>w/x</b> (incremento/decremento della velocità lineare), <b>s</b> (blocca il moto).<br> 
   Terminata l'esplorazione, il salvataggio della mappa generata con il <b>map_server</b> avviene tramite il comando <b>'rosrun map_saver -f ~/nome_della_mappa/path'</b>.
   <br>
@@ -354,23 +328,34 @@ terzo.
   display: table;
 }
 </style>
-</head>
-<body>
+
+
 
 <div class="clearfix">
   <div class="img-container">
-  <img src="Progetto_files/map_Maze.png"  style="width:100%">
+  <img src="./Progetto_files/map_Maze.png" style="width:100%">
   </div>
   <div class="img-container">
-  <img src="Progetto_files/map_Maze2.png"  style="width:100%">
+  <img src="./Progetto_files/map_Maze2.png" style="width:100%">
   </div>
   <div class="img-container">
-  <img src="Progetto_files/map-Stanza.png"  style="width:100%">
+  <img src="./Progetto_files/map-Stanza.png" style="width:100%">
   </div>
-</div>
-    
-    
-<p><b>Navigazione Autonoma</b>
+</div>                               
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+				
+				
+				<!--//section-->
+				
+
+        <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading"><a id="training"></a>Codice</h2>
+                        <div class="content">
+
+                          <p><b>Navigazione Autonoma</b><br>
 L'obiettivo finale del progetto è la navigazione autonoma del robot. 
 <br>
 Per consentire la navigazione autonoma di un robot abbiamo bisogno di 
@@ -380,7 +365,7 @@ Per poter navigare il robot utilizza un ROS Navigation Stack il quale
 richiede in inupt informazioni inviate dall'odontometria e dai sensori 
 ed invia al robot comandi circa la velocità per navigare.
 <br>
-<img class="profile-image img-responsive pull-left" src="Progetto_files/navigation_stack.png" alt="unibas logo" width="840" height="680">
+<img class="profile-image img-responsive pull-left" src="./Progetto_files/navigation_stack.png" alt="unibas logo" width="840" height="680">
 <br>
 Il navigation stack necessita inoltre che il robot sia configurato, per 
 far ciò è necessario che si abbiano le informazioni riguardanti la mappa
@@ -403,7 +388,52 @@ posizione della particella.
 Per l'implementazione dell'ultimo obiettivo creeremo dunque un albero 
 /tf per rilevare informazioni riguardo le relazioni di coordinate tra i 
 frames.
-In primo terminale apriamo Gazebo in cui verrà carricato il mondo 
+<br>
+Il file launch amcl richiama al suo interno quattro nodi: il nodo 'Map Server', il nodo 'Place map frame at odometry frame', il nodo amcl che denomineremo 'Localization' ed infine il nodo 'Move Base'. <br>
+Il nodo Map Server è fondamentale in quanto ci consente di caricare la mappa precedentemente creata con gmapping, andando a specificare il path in cui è stato memorizzato il file .yaml.
+<br>
+<img class="profile-image img-responsive pull-left" src="./Progetto_files/MapServer.png" alt="unibas logo" width="840" height="680">
+<br>
+Con il nodo 'Place map frame at odometry frame' andiamo a creare un albero tf/ per rilevare informazioni riguardo le relazioni di coordinate tra i frames, in quanto pubblica la trasformazione da odom (che può essere rimappata tramite il parametro ~odom_frame_id) a map.
+<br>
+<img class="profile-image img-responsive pull-left" src="./Progetto_files/Tf.png" alt="unibas logo" width="840" height="680">
+<br>
+Richiamiamo adesso anche il nodo amcl con il seguente comando:
+<br>
+<img class="profile-image img-responsive pull-left" src="./Progetto_files/amcl_node.png" alt="unibas logo" width="840" height="680">
+<br>
+Per default l'amcl package prende informazioni dal topic 'scan', nel nostro caso il sensore Hokuyo pubblica sul topic marrtino/laser/scan, motivo per cui useremo il tag 'remap' per rimappare il nome del topic 'scan' sull'attuale nome del topic.
+<br>
+<img class="profile-image img-responsive pull-left" src="./Progetto_files/remap_scan.png" alt="unibas logo" width="840" height="680">
+<br>
+Il nodo AMCL richiede anche un insieme di parametri per connettere il mondo (map frame) con il robot (odom frame). Questi parametri sono necessari al package amcl per localizzare il robot all'interno del mondo.
+<br>
+<img class="profile-image img-responsive pull-left" src="./Progetto_files/param.png" alt="unibas logo" width="840" height="680">
+<br>
+In particlare il parametro 'odom_frame_id' fa riferimento a quali frame vengono utilizzati per l'odometria, il parametro 'odom_frame_type' fa riferimento al modello utiliazzato e con 'base_frame_id' si fa riferimento alla base del robot. Definiamo inoltre una posizione iniziale direttamente dal file launch con i seguenti comandi:
+<br>
+<img class="profile-image img-responsive pull-left" src="./Progetto_files/initial_pose.png" alt="unibas logo" width="840" height="680">
+<br>
+Riassumendo il nodo 'Localization' ha la seguente struttura:
+<br>
+<img class="profile-image img-responsive pull-left" src="./Progetto_files/Localization.png" alt="unibas logo" width="840" height="680">
+<br>
+Il nodo 'Move Base' è invece fondamentale per fornire un obiettivo di navigazione, quindi per definire una posizione all'interno della mappa che il robot deve raggiungere. Il package move_base utilizza una  costmap in cui ogni parte della mappa è divisa in quale area è occupata, come muri o ostacoli, e quale area non è occupata. Mentre il robot si muove una costmap locale, in relazione alla costmap globale, continua ad aggiornarsi consentendo al package di definire un percorso continuo lungo cui far muovere il robot.
+<br>
+Iniziamo con l'aggiungere il nodo move_base al file launch:
+<br>
+<img class="profile-image img-responsive pull-left" src="./Progetto_files/move_base.png" alt="unibas logo" width="840" height="680">
+<br>
+Successivamente includiamo i file config:
+<br>
+<img class="profile-image img-responsive pull-left" src="./Progetto_files/config.png" alt="unibas logo" width="840" height="680">
+<br>
+Quindi con il tag remap come fatto in precedenza rimappaimo i topic 'cmd_vel', 'odom', 'scan' sui topic attuali:
+<br>
+<img class="profile-image img-responsive pull-left" src="./Progetto_files/remap.png" alt="unibas logo" width="840" height="680">
+<br>
+Per esegure quanto discusso sopra effettuaimo i segeunti passi:
+<br>In primo terminale apriamo Gazebo in cui verrà carricato il mondo 
 corrispondente con il modello di MARRtino, che assumerà una posizione 
 fissa, con il comando 'roslaunch marrtino nome_mondo.launch', in un 
 secondo temrinale eseguiamo il comando 'roslaunch marrtino 
@@ -416,78 +446,131 @@ viene caricato il modello del robot e la mappa precedenetemente creata,
 selezionando il tasto 2D Nav Goal definiamo la destinazione che 
 desideriamo far raggiungere al robot. 
 </p>
-                                                     
+
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
-                </section><!--//section-->
-				
-				
-				<!--//section-->
-				
+        </section><!--//section-->
+
 				<section class="about section">
                     <div class="section-inner">
                         <h2 class="heading"><a id="training"></a>Test e Risultati</h2>
                         <div class="content">
               <h3>Scanning dell'ambiente</h3>
               <p>Di seguito sono riportati i video che mostrano lo scanning della mappa del robot MARRtino, comandato da tastiera, con il sensore montatogli sopra attraverso l'utilizzo del nodo "My-laser-scan" per i tre mondi.
-                <li>
-                  Mondo 1: Stanza<br>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/RbS84k1p4rA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p><li>
+                  <b>Mondo 1: Stanza</b><br>
+                  <iframe width="560" height="315" src="./Progetto_files/RbS84k1p4rA.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 </li>
                 <li>
-                  Mondo 2: Maze2<br>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/lnOlhIPfYoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <b>Mondo 2: Maze2</b><br>
+                  <iframe width="560" height="315" src="./Progetto_files/lnOlhIPfYoU.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 </li>
                 <li>
-                  Mondo 3: Maze<br>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/UTtE9BEqOAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <b>Mondo 3: Maze</b><br>
+                  <iframe width="560" height="315" src="./Progetto_files/UTtE9BEqOAU.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 </li>
-</p>			
+<p></p>			
 								
-							<h3>Test di navigazione</h3>
+							<h3>Risultati Qualitativi</h3>
 							<p> Di seguito sono riportare le dimostrazioni del funzionamento 
 dell'algoritmo, in cui vine mostrata l'applicazione sia nell'ambiente di
- simulazione Gazebo che in Rviz.<br><br>
+ simulazione Gazebo che in Rviz.<br>
                 Al fine di verificare l'efficenza dell'algoritmo di 
 navigazione sono stati eseguiti diversi test per i diversi mondi. 
 <br>
+</p><h4> Test di navigazione </h4>
  Di seguito sono riportare le dimostrazioni del funzionamento 
 dell'algoritmo, in cui vine mostrata l'applicazione sia nell'ambiente di
- simulazione Gazebo che in Rviz.</p>
-    <li>
-      Mondo 1: Stanza
+ simulazione Gazebo che in Rviz.<p></p>
+    <ul><li>
+      <b>Stanza</b>
       <br>
-      Per il primo mondo ci siamo limitati a verificare il corretto funzionamento dell'algoritmo e, quindi, alla corretta navigazione del robot dal punto A (il punto in cui si trova il robot a inizio simulazione) al punto B (il punto più distante della mappa), in quanto il mondo stesso è molto semplice.<br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/cSF6NK96I2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </li>
+      Per il primo mondo ci siamo limitati a verificare il corretto funzionamento dell'algoritmo e, quindi, alla corretta navigazione del robot dal punto A (il punto in cui si trova il robot a inizio simulazione) al punto B (il punto più distante della mappa), in quanto il mondo stesso è molto semplice.<br></li></ul>
+      <iframe width="560" height="315" src="./Progetto_files/cSF6NK96I2c.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    
 
-    <li>
-      Mondo 2: Maze2
+    <ul><li>
+      <b>Maze2</b>
       <br>
       Per il secondo mondo sono stati effettuati due test di navigazione per verificare che il robot riesca a raggiungere il punto di interesse in qualunque posizione e con qualunque ostacolo si trovi di fronte. 
       <br>
-      Il primo test prevede il raggiungimento di un punto molto lontano dal punto di inizio del robot con la prensenza diversi muri che si frappongono fra il robot e il suo obiettivo.<br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xTsSuIstPFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-      Il secondo test prevede il raggiungimento di un punto B distante dal punto di partenza A. Anche qui ci sono diversi muri nel mezzo, in più è presente, nell'ultimo tratto, un restringimento dei muri.
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/qg46l2kPUAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </li>
-    </li><li>
-      Mondo 3: Maze
+      Il primo test prevede il raggiungimento di un punto molto lontano dal punto di inizio del robot con la prensenza diversi muri che si frappongono fra il robot e il suo obiettivo.<br></li></ul>
+      <iframe width="560" height="315" src="./Progetto_files/xTsSuIstPFk.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>
+      <ul>Il secondo test prevede il raggiungimento di un punto B distante dal punto di partenza A. Anche qui ci sono diversi muri nel mezzo, in più è presente, nell'ultimo tratto, un restringimento dei muri.</ul>
+      <iframe width="560" height="315" src="./Progetto_files/qg46l2kPUAk.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    
+    <ul><li>
+      <b>Maze</b>
       <br>
       Per il terzo mondo è sono stati effettuati due test. In questo caso è stato utilizzato un labirinto più grande rispetto al primo.
       <br>
-      Per il primo test è stato scelto un punto centrale della mappa, difficle per il cambio di direzioni che il robot deve prendere. <br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/axD1Y_c3GN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
-      Per il secondo test è stato scelto il punto opposto della mappa (in quanto speculare), per verificare il corretto movimento del robot in ambienti più grandi.<br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/0aMEGTirWVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </li>
+      Per il primo test è stato scelto un punto centrale della mappa, difficle per il cambio di direzioni che il robot deve prendere. <br></li></ul>
+      <iframe width="560" height="315" src="./Progetto_files/axD1Y_c3GN0.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> <br>
+      <ul>Per il secondo test è stato scelto il punto opposto della mappa (in quanto speculare), per verificare il corretto movimento del robot in ambienti più grandi.<br></ul>
+      <iframe width="560" height="315" src="./Progetto_files/0aMEGTirWVI.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    
 
-      </li><p>
+      <p>
       
-	<h3>Risultati quantitativi</h3>
-	<p>La navigazione autonoma del robot MARRtino funziona perfettamente nella quasi totalità dei casi studiati. Infatti possiamo notare come per tutti e tre i mondi il robot MARRtino sia riuscito a raggiungere il punto segnato senza problemi. Diversi sono i problemi che affliggono la simulazione per quanto riguarda il mapping dell'ambiente. Nella seconda simulazione di Maze, come è possibile vedere dal video, il robot non riesce a raggiungere il punto segnato in quanto la mappa passata risulta differente da quella creata in gazebo, ovvero risulta errata, distorta quasi totalmente. Il mapping di Maze è risultato più volte fallimentare in quanto gli spazi troppo ampi rendono le rilevazioni del sensore montato sul robot MARRtino molto difficoltose a causa di continue ricalibrazioni del sensore con conseguente rimappatura delle aree visibili da esso. Quest'ultima mappa è risultata essere la migliore mappatura tra quelle effettuate.
-    E' possibile notare come il robot tenti di superare il muro che è stato appena rilevato in una posizione differente da quella registrata nella mappa, però dopo un numero elevato di tentativi, e dopo essere riuscito in parte a oltrepassare il muro, il robot si blocca contro quest'ultimo e non da più segni di movimento. </p>
-    <img src="Progetto_files/robot_errore.png"  style="width:50%">
+	</p><h3>Risultati quantitativi</h3>
+	<p>A questo punto, sono state svolte le analisi riguardanti i singoli test di navigazione svolti (riscontrando il successo o l'eventuale fallimento e le relative dicoltà
+riscontrate).
+    </p><h4> Test Stanza </h4>
+    L'ambiente presenta un percorso libero da ostacoli, si compone solo di diverse curve.<br><br> 
+    <ul><li><b>Percorso:</b> obiettivo raggiunto senza problemi.
+      <div class="clearfix">
+        <div class="img-container">
+          <img src="./Progetto_files/percorso stanza.png" style="width:100%">
+        </div>
+        <div class="img-container">
+          <img src="./Progetto_files/percorso stanza completo.png" style="width:98%">
+        </div>
+      </div></li><br></ul>
+    <h4> Test Maze2 </h4>
+    L'ambiente si presenta come un labirinto molto articolato, con diversi muri che si frappongono tra il punto di partenza e l'obiettivo.<br><br>
+    <ul><li><b>Percorso 1:</b> obiettivo raggiunto senza problemi.
+      <div class="clearfix">
+        <div class="img-container">
+          <img src="./Progetto_files/percorso1 maze2.png" style="width:100%">
+        </div>
+        <div class="img-container">
+          <img src="./Progetto_files/percorso1 maze2 completo.png" style="width:100%">
+        </div>
+      </div></li>
+    <li><b>Percorso 2:</b> obiettivo raggiunto senza problemi.
+      <div class="clearfix">
+        <div class="img-container">
+          <img src="./Progetto_files/percorso2 maze2.png" style="width:100%">
+        </div>
+        <div class="img-container">
+          <img src="./Progetto_files/percorso2 maze2 completo.png" style="width:100%">
+        </div>
+      </div></li><br></ul>
+    <h4> Test Maze1 </h4>
+    L'ambiente si presenta come un labirinto meno articolato rispetto al primo, anche qui con diversi muri che si frappongono tra il punto di partenza e l'obiettivo, ma il labirinto copre una superficie maggiore.<br><br>
+    <ul><li><b>Percorso 1:</b> obiettivo raggiunto senza problemi.
+      <div class="clearfix">
+        <div class="img-container">
+          <img src="./Progetto_files/percorso1 maze1.png" style="width:100%">
+        </div>
+        <div class="img-container">
+          <img src="./Progetto_files/percorso1 maze1 completo.png" style="width:100%">
+        </div>
+      </div></li>
+    <li><b>Percorso 2:</b> obiettivo non raggiunto.<br> 
+      A causa della superficie elevata del labirinto non è stato possibile effettuare un mapping preciso, in quanto il sensore del robot continuava a ricalibrarsi perdendo la posizione precisa nello spazio e andando a riscrivere il labirinto appena mappato con la nuova posizione. Il mapping in output risulta, infatti essere inclinato verso destra nella metà superiore.<br>
+      <div class="clearfix">
+        <div class="img-container">
+          <img src="./Progetto_files/percorso2 maze1.png" style="width:100%">
+        </div>
+        <div class="img-container">
+          <img src="./Progetto_files/percorso2 maze1 completo.png" style="width:100%">
+        </div>
+      </div>
+    </li><br></ul>
+  <p></p>
+  
+    
 							
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
@@ -555,5 +638,6 @@ dell'algoritmo, in cui vine mostrata l'applicazione sia nell'ambiente di
  
 
  
+
 
 </body></html>
